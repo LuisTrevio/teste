@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+/* font-family: "Heebo", sans-serif;  Principal*/ 
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+/* font-family: "Lexend", sans-serif; Titulos*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+/* font-family: "Inter", sans-serif; Textos en Detalle*/
+
+* {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+*,::after,::before {box-sizing: border-box;}
+
+html,body {height: 100%; 
+    scroll-behavior: smooth;}
+
+::selection {background-color: var(--navi-blue);}
+
+input,button,textarea,select {font: inherit;}
+
+a {text-decoration: none;}
+
+button {border: none;}
+
+br {
+    -webkit-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+body {
+    background: var(--white);
+    color: var(--black);
+}
+
+body {
+    --navi-blue: #1a69e07c;
+    --white: #ffffff;
+    --black: #000000;
+
+    --header: #0a174800;
+    --header-on: #0A1748;
+
+    --menu: #060D26;
+
+    --green: #57a609;
+
+    --bg: #e5e5e5;
+    --bar: #0A1748;
+    --bg-bar: var(--navi-blue);
+
+    --bg-box:#353535;
+    --bg-box-select: #2b56f7;
+
+    --test: red;
+}
+
+body::-webkit-scrollbar {width: 10px;   background: var(--bg)}
+body::-webkit-scrollbar-thumb {border: 0px solid var(--bg);   background: var(--bar);}
+body::-webkit-scrollbar-track {border-radius: 5px;      background: none;}
+body::-webkit-scrollbar:hover {background: var(--bg-bar);}
+body::-webkit-scrollbar:hover body::-webkit-scrollbar-thumb {border: 1px solid var(--bg-bar);}
+
+@media (max-width:780px) {
+    .scroll-frost { overflow: hidden;}
+    ::-webkit-scrollbar {display: none;}
+}

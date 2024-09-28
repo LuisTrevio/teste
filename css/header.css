@@ -1,0 +1,340 @@
+:root {--header-height: 80px;}
+@media (max-width:780px) {:root {--header-height: 60px;}}
+
+header {
+    width: 100%;
+    height: var(--header-height);
+
+    display: flex;
+    position: fixed;
+
+    background-color: var(--header);
+
+    z-index: 4;
+
+    transition: 0.2s ease-out;
+}
+
+nav {
+    width: 100%;
+    max-width: 1140px;
+
+    height: var(--header-height);
+
+    display: flex;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 14px;
+    transition: 0.2s ease-out;
+    padding: 0 10px;
+
+    z-index: 4;
+}
+
+.active {
+    background-color: var(--header-on);
+    box-shadow: var(--shadow-elevation-low);
+} /*al deslizar hacia abajo se activa el color*/
+
+.logo {
+    width: 200px;
+    height: var(--header-height);
+
+    background-image: url(../img/RemodelLogo.svg);
+    background-size: 100% 90%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.nav-link-grid {
+    width: auto;
+    height: var(--header-height);
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    font-family: "Heebo", sans-serif;
+}
+
+.nav-link {
+    width: 106px;
+    height: var(--header-height);
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    color: var(--white);
+
+    transition: 0.2s ease-out;
+}
+
+.nav-link:hover {
+    color:var(--black);
+}
+
+.nav-link b {
+    transition: 0.2s ease-out;
+    padding: 7px 12px;
+    border-radius: 25px;
+    background-color: #0000001a;
+
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.nav-link-block:hover b {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.nav-link:hover b {
+    background-color: var(--white);
+}
+
+.sub-link-bg b {
+    background-color: #ffffff00;
+}
+
+.nav-link-block {
+    width: 106px;
+    height: var(--header-height);
+
+    display: block;
+
+    color: var(--white);
+    cursor:default;
+    
+}
+
+.box {
+    width: 260px;
+    height: auto;
+
+    flex-direction: column;
+    position: fixed;
+
+    transition: 0.2s ease-out;
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translate(-80px, 20px);
+
+    padding: 10px;
+    background-color: #353535;
+    border-radius: 20px;
+    gap: 3px;
+}
+
+.nav-link-block:hover .box {
+    display: flex;
+ 
+    transform: translate(-80px, -10px);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.sub-link {
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+    position: static;
+    pointer-events: none;
+
+    background-color: var(--bg-box);
+    color: var(--white);
+
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.2s ease-out;
+    border-radius: 16px;
+}
+
+.sub-link:hover {
+    background-color: var(--bg-box-select);
+}
+
+.nav-link-block:hover .sub-link {
+    pointer-events: all;
+}
+
+.social-media {
+    width: 80px;
+    height: var(--header-height);
+ 
+    display: flex;
+
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width:780px) {
+    .nav-link-grid {display: none;}
+    .social-media {display: none;}
+    nav {padding: 0 10px 0 10px;}
+}
+
+.menu-btn {
+    display: none;
+}
+
+.menu-full {
+    display: none;
+}
+
+@media (max-width:780px) {
+    .menu-btn {
+        display: flex;
+        width: 60px;
+        height: var(--header-height);
+        background: none;
+    }
+
+    .button {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 5px;
+    
+    }
+    
+    .bar-1, .bar-3 {
+        width: 20px;
+        height: 3px;
+    
+        border-radius: 20px;
+    
+        /*background: rgb(255, 255, 255);*/
+        background: var(--white);
+        transition: 200ms ease-out;
+        transform: scale(1);
+    }
+
+    .bar1-on {
+        position: fixed;
+        transform: rotate(-46deg);
+    }
+    .bar2-on {opacity: 0;}
+    .bar3-on {
+        position: fixed;
+        transform: rotate(44deg);
+    }
+
+    .menu-full {
+        width: 100%;
+        height: 100%;
+    
+        display: flex;
+        flex-direction: column;
+    
+        position: fixed;
+    
+        background-color: var(--menu);
+    
+        transform: translateY(-100%);
+        transition: 0.36s cubic-bezier(1, 0.04, 0.36, 1);
+    
+        z-index: 2;
+    }
+    
+    .menu-full-on {
+        transform: translateY(0);
+    }
+
+    .menu-nav-grid {
+        width: 100%;
+        height: auto;
+
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+
+        background-color: var(--menu);
+        font-family: "Heebo", sans-serif;
+
+        opacity: 0;
+        transition: 0.2s ease-out;
+
+        padding: 0 20px;
+    }
+
+    .nav-smooth {
+        animation: 0.725s smoothing ease-out forwards;
+    }
+
+    @keyframes smoothing {
+        0% {opacity: 0;}
+        50% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+    .nav-grid {
+        width: 100%;
+        height: 50px;
+
+        background-color: #030715;
+        color: var(--white);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 20px;
+
+        transition: 0.2s ease-out;
+        border-radius: 17px;
+
+        margin-bottom: 6px;
+    }
+
+    .nav-grid:active { background-color: #1a285b;}
+
+    .box-grid-Nosotros, .box-grid-Servicios{
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        transform: scale(0.98);
+
+        transition: 0.2s cubic-bezier(.17,.67,.47,1);
+
+        pointer-events: none;
+        user-select: none;
+
+        gap: 6px;
+    }
+
+    .box-grid-Nosotros-Up{
+        height: 170px;
+        pointer-events: all;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .box-grid-Servicios-Up{
+        height: 115px;
+        pointer-events: all;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .box-grid-Nosotros > .nav-grid {background-color: #0e1633; }
+    .box-grid-Nosotros > .nav-grid:active {background-color: #1a285b;}
+    .box-grid-Servicios > .nav-grid {background-color: #0e1633;}
+    .box-grid-Servicios > .nav-grid:active {background-color: #1a285b;}
+
+    .nav-select-Nosotros-Up {background-color: #1a285b;}
+    .nav-select-Servicios-Up {background-color: #1a285b;}
+}

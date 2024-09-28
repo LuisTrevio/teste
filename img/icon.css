@@ -1,0 +1,152 @@
+:root {
+    --shadow-color: 228deg 100% 6%;
+    --shadow-elevation-low:
+      0px 0.6px 0.7px hsl(var(--shadow-color) / 0.34),
+      0px 1px 1.1px -1.2px hsl(var(--shadow-color) / 0.34),
+      0px 2.3px 2.6px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      0px 0.6px 0.7px hsl(var(--shadow-color) / 0.36),
+      0px 1.9px 2.1px -0.8px hsl(var(--shadow-color) / 0.36),
+      0px 4.8px 5.4px -1.7px hsl(var(--shadow-color) / 0.36),
+      -0.1px 11.6px 13.1px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      0px 0.6px 0.7px hsl(var(--shadow-color) / 0.34),
+      0px 3.4px 3.8px -0.4px hsl(var(--shadow-color) / 0.34),
+      0px 6.3px 7.1px -0.7px hsl(var(--shadow-color) / 0.34),
+      -0.1px 10.3px 11.6px -1.1px hsl(var(--shadow-color) / 0.34),
+      -0.1px 16.5px 18.6px -1.4px hsl(var(--shadow-color) / 0.34),
+      -0.1px 25.8px 29px -1.8px hsl(var(--shadow-color) / 0.34),
+      -0.2px 39.3px 44.2px -2.1px hsl(var(--shadow-color) / 0.34),
+      -0.3px 57.9px 65.1px -2.5px hsl(var(--shadow-color) / 0.34);
+  }
+
+.icons {
+    width: 100%;
+    height: 110px;
+
+    background-position: center;
+    background-size: 80% 60%;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:780px) {
+    .icons {
+        height: 70px;
+    }
+}
+
+.ming {
+    width: 20px;
+    height: 20px; 
+
+    background-image: url(ming.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.nav-link-block:hover .ming { filter: invert(1);}
+
+.reds {
+    width: 35px;
+    height: 35px;
+
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    border-radius: 20px;
+    transition: 0.2s ease-out;
+}
+
+.recy {
+    background-image: url(recy.svg);
+}
+
+.cont {
+    background-image: url(contacts.svg);
+    fill: var(--green);
+}
+
+.reds:hover {
+    background-color: rgba(252, 252, 252, 0.573);
+}
+
+.facebook {
+    background-image: url(facebook-icon.svg);
+}
+
+.linkedin {
+    background-image: url(linkedin-icon.svg);
+}
+
+.play-icon {
+    background-image: url(play.svg);
+    background-position: center;
+    background-size: 70% 70%;
+    background-repeat: no-repeat;
+}
+
+.introduccion {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position: center bottom;
+
+    color: white;
+}
+
+.cert-bg {
+    background-color: #e5e5e5;
+    color: rgb(0, 0, 0);
+}
+
+.ecologic-bg {background-color: #0a1748;  color: var(--white);}
+
+.recycle-bg {
+    background-color: #e5e5e5;
+    color: rgb(0, 0, 0);
+}
+
+.colage-bg {background-color: #0a1748;  color: var(--white);}
+
+.somos-bg {background-image: url(somos.jpg); background-size: cover; background-position: center;}
+
+.cert-icon {
+    width: 40px;
+    height: 40px; 
+
+    margin-right: 10px;
+
+    background-image: url(ph_certificate-bold.svg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: 0.2s ease-out;
+}
+
+.rec-svg {
+    width: 60px;
+    height: 60px;
+
+    background-position: center;
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+}
+
+.nav-select-Nosotros-Up > .ming {background-image: url(line.svg);}
+.nav-select-Servicios-Up > .ming {background-image: url(line.svg);}
+
+.pc {background-image: url(game-icons_pc.svg); background-size: 100% 100%;}
+.printer {background-image: url(mdi_printer.svg);}
+.phone {background-image: url(mdi_telephone.svg);}
+.cd {background-image: url(tdesign_dvd.svg);}
+.phone2 {background-image: url(bi_phone.svg);}
+.radio {background-image: url(material-symbols_radio.svg);}
+
+
+.item02 {background-image: url(item02.jpg);}
+.item03 {background-image: url(item03.jpg);}
+.item04 {background-image: url(item04.jpg);}
