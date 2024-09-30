@@ -102,7 +102,7 @@
     color: rgb(0, 0, 0);
 }
 
-.ecologic-bg {background-color: #0a1748;  color: var(--white);}
+.ecologic-bg {background-image: url(eco-background.jfif);  color: black; background-size: cover;}
 
 .recycle-bg {
     background-color: #e5e5e5;
@@ -111,7 +111,7 @@
 
 .colage-bg {background-color: #0a1748;  color: var(--white);}
 
-.somos-bg {background-image: url(somos.jpg); background-size: cover; background-position: center;}
+.somos-bg {background-image: url(somos.jpg); background-size: cover; background-position: center; backdrop-filter: brightness(0.5);}
 
 .cert-icon {
     width: 40px;
@@ -150,3 +150,5 @@
 .item02 {background-image: url(item02.jpg);}
 .item03 {background-image: url(item03.jpg);}
 .item04 {background-image: url(item04.jpg);}
+
+.footer-bg {background-image: url(footer.png);}

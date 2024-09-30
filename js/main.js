@@ -27,11 +27,17 @@ function ClickMenu() {
 function ExpNosotros() {
     document.querySelectorAll('.Nosotros-up').forEach((result) => {result.classList.toggle('box-grid-Nosotros-Up');})
     document.querySelectorAll('.nav-select-Nosotros').forEach((result) => {result.classList.toggle('nav-select-Nosotros-Up');})
+
+    document.querySelectorAll('.Servicios-up').forEach((result) => {result.classList.remove('box-grid-Servicios-Up');})
+    document.querySelectorAll('.nav-select-Servicios').forEach((result) => {result.classList.remove('nav-select-Servicios-Up');})
 }
 
 function ExpServicios() {
     document.querySelectorAll('.Servicios-up').forEach((result) => {result.classList.toggle('box-grid-Servicios-Up');})
     document.querySelectorAll('.nav-select-Servicios').forEach((result) => {result.classList.toggle('nav-select-Servicios-Up');})
+
+    document.querySelectorAll('.Nosotros-up').forEach((result) => {result.classList.remove('box-grid-Nosotros-Up');})
+    document.querySelectorAll('.nav-select-Nosotros').forEach((result) => {result.classList.remove('nav-select-Nosotros-Up');})
 }
 
 function Blue() {
