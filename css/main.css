@@ -12,7 +12,9 @@
     scroll-behavior: smooth;
 }
 
-*,::after,::before {box-sizing: border-box;}
+*,::after,::before {-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;}
 
 html,body {height: 100%; }
 
@@ -33,6 +35,7 @@ br {
 body {
     background: var(--white);
     color: var(--black);
+    -webkit-font-smoothing: antiliased;
 }
 
 body {
@@ -53,11 +56,30 @@ body {
     --bar: #0A1748;
     --bg-bar: var(--navi-blue);
 
-    --bg-box:#353535;
+    --bg-box:#202020;
     --bg-box-select: #2b56f7;
 
     --test: red;
+
+    --certificado-color-bg:  linear-gradient(
+        45deg,
+        hsl(227deg 10% 61%) 0%,
+        hsl(228deg 10% 64%) 9%,
+        hsl(228deg 10% 67%) 19%,
+        hsl(228deg 10% 70%) 29%,
+        hsl(228deg 10% 74%) 41%,
+        hsl(228deg 10% 77%) 52%,
+        hsl(228deg 10% 80%) 61%,
+        hsl(228deg 10% 83%) 70%,
+        hsl(228deg 10% 87%) 78%,
+        hsl(229deg 10% 90%) 84%,
+        hsl(229deg 10% 93%) 90%,
+        hsl(229deg 10% 97%) 95%,
+        hsl(0deg 0% 100%) 100%
+      );
 }
+
+
 
 body::-webkit-scrollbar {width: 10px;   background: var(--bg)}
 body::-webkit-scrollbar-thumb {border: 0px solid var(--bg);   background: var(--bar);}

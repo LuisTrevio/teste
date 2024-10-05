@@ -113,6 +113,8 @@
 
 .somos-bg {background-image: url(somos.jpg); background-size: cover; background-position: center; backdrop-filter: brightness(0.5);}
 
+.opinion-bg {background-color: #ffffff;  color: var(--black);}
+
 .cert-icon {
     width: 40px;
     height: 40px; 

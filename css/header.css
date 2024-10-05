@@ -134,8 +134,8 @@ nav {
     transform: translate(-80px, 20px);
 
     padding: 10px;
-    background-color: #353535;
-    border-radius: 20px;
+    background-color: var(--bg-box);
+    border-radius: 32px;
     gap: 3px;
 }
 
@@ -162,7 +162,7 @@ nav {
     align-items: center;
 
     transition: 0.2s ease-out;
-    border-radius: 16px;
+    border-radius: 32px;
 }
 
 .sub-link:hover {
