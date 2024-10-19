@@ -88,10 +88,19 @@
             </div>
         </header>
 
+        <div onclick="Pop()" class="Pop-Off P-On"></div>
+
+        <div class="Video Pop-Video-O">
+            <video id="llr" width="100%" height="100%" controls>
+                <source src="http://www.techemetmx.com/uploads/Techemet-F-560.mp4" type="video/mp4">
+            </video>
+        </div>
+       
+
         <div class="content-full"><!-- EL CONTENIDO EMPIEZA DESDE AQUI-->
 
             <div class="intro-section">
-                <video autoplay loop muted play-sinline no-ratio class="background-clip">
+                <video id="llx" autoplay loop muted play-sinline no-ratio class="background-clip">
                     <source src="img/test.mp4" type="video/mp4">
                 </video>
 
@@ -101,7 +110,7 @@
                             <h1>EMPRESA LIDER EN RECICLAJE</h1>
                             Empresa internacional dedicada en el reciclaje de catalizadores y desechos electrónicos 
                             con puntos de recolección en todo Mexico.
-                            <a tabindex="7" href="#" class="btn-video"><div class="play-icon"></div>Ver Video Corporativo</a>
+                            <button onclick="Pop(), PopVideo()" tabindex="7" href="#" class="btn-video"><div class="play-icon"></div>Ver Video Corporativo</button>
                         </div>
                     </div>
                 </div>
@@ -403,7 +412,7 @@
             
 
         <!--EL CONTENIDO TERMINA-->
-        </div>
+        </div> 
     </body>
 
 </html>

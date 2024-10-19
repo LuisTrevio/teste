@@ -74,3 +74,13 @@ else {
     document.querySelectorAll('.hover-r').forEach((result) => {result.classList.add('hover-red');})
 }
 
+function Pop() {
+    document.querySelectorAll('.scr-fr').forEach((result) => {result.classList.toggle('scroll-frost');})
+    document.querySelectorAll('.P-On').forEach((result) => {result.classList.toggle('Pop-On');})
+    document.querySelectorAll('.Pop-Video-O').forEach((result) => {result.classList.remove('Pop-Video-Out')})
+
+    document.getElementById('llr').pause();
+    document.getElementById('llx').play();
+}
+
+function PopVideo() {document.querySelectorAll('.Pop-Video-O').forEach((result) => {result.classList.add('Pop-Video-Out')});  document.getElementById('llr').play(); document.getElementById('llx').pause();}
