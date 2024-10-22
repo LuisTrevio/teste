@@ -405,8 +405,8 @@ nav {
 .Video {
     display: none;
     position: fixed;
-    width: 70%;
-    height: 70%;
+    width: 63vw;
+    height: fit-content;
 
     background: rgba(0, 0, 0, 0);
 
@@ -419,8 +419,6 @@ nav {
 
 .Pop-Video-Out {
     display: block;
-    background: rgb(0, 0, 0);
-
     pointer-events: all;
 }
 
@@ -429,6 +427,6 @@ nav {
 
     .Video {
         width: 100%;
-        height: 50%;
+        height: fit-content;
     }
 }
