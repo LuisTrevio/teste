@@ -41,8 +41,8 @@ function ExpServicios() {
     document.querySelectorAll('.nav-select-Nosotros').forEach((result) => {result.classList.remove('nav-select-Nosotros-Up');})
 }
 
-function Blue() {
-    localStorage.setItem('blue', 'true');
+function RecCat() {
+    localStorage.setItem('Catalizador', 'true');
     document.querySelectorAll('.disable-b').forEach((result) => {result.classList.add('disable-blue');}) 
     document.querySelectorAll('.disable-r').forEach((result) => {result.classList.remove('disable-red');})
 
@@ -50,8 +50,8 @@ function Blue() {
     document.querySelectorAll('.hover-r').forEach((result) => {result.classList.remove('hover-red');})
 }
 
-function Red() {
-    localStorage.setItem('blue', 'false');
+function RecElec() {
+    localStorage.setItem('Catalizador', 'false');
     document.querySelectorAll('.disable-b').forEach((result) => {result.classList.remove('disable-blue');}) 
     document.querySelectorAll('.disable-r').forEach((result) => {result.classList.add('disable-red');})
 
@@ -59,7 +59,7 @@ function Red() {
     document.querySelectorAll('.hover-r').forEach((result) => {result.classList.add('hover-red');})
 }
 
-if (localStorage.getItem('blue') === 'true' ) {
+if (localStorage.getItem('Catalizador') === 'true' ) {
     document.querySelectorAll('.disable-b').forEach((result) => {result.classList.add('disable-blue');}) 
     document.querySelectorAll('.disable-r').forEach((result) => {result.classList.remove('disable-red');})
 
